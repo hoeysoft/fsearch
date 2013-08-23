@@ -1,4 +1,4 @@
-# slg.py - Search Launcher Generator
+# sl_gen.py - Search Launcher Generator
 # Written by hoey @ hoeysoft.com
 
 """Usage : >>python slg.py 
