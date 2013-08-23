@@ -1,1 +1,4 @@
-search.naver.com/search.naver?ie=utf8&query=  n.bat
+www.google.com/#q=  g.bat
+search.naver.com/search.naver?ie=utf8&query=    n.bat
+endic.naver.com/search.nhn?query=   e.bat
+krdic.naver.com/search.nhn?query=   k.bat

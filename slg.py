@@ -1,5 +1,5 @@
 # slg.py - Search Launcher Generator
-# Written by hoey.
+# Written by hoey @ hoeysoft.com
 
 """Usage : >>python slg.py 
 """
@@ -37,32 +37,50 @@ SET HOEY_LCHR_BROWSER=
 SET HOEY_LCHR_QUERY=
 """
 
-
 _OUT_EXTENSION = '.bat'
+
 
 import sys
 import re
+
+
+def get_args():
+    """read args from <stdin> or <argv>
+    """
+
+    argc = len(sys.argv)
+    if argc == 1: # stdin mode
+        line = raw_input()
+        return re.split('\s*', line, 2)
+        
+    else: # argv mode
+        return sys.argv[1:]
+
+
 if __name__ == '__main__':
     try:
         while True:
             template = _TEMPLATE[:]
+            args = get_args()
 
-            line = raw_input()
-            args = re.split('\s*', line, 2)
             query_url = args[0]
             assert(query_url != '')
 
-            if len(args) > 1: outfile = args[1]
-            else:             outfile = 'out.bat'
-
-            if outfile[-4:] != _OUT_EXTENSION:
-                outfile = outfile + _OUT_EXTENSION 
+            outfile = 'out.bat'
+            if len(args) > 1: 
+                outfile = args[1]
+                if outfile[-4:] != _OUT_EXTENSION:
+                    outfile = outfile + _OUT_EXTENSION 
     
-            f = open(outfile, 'r')
+            f = open(outfile, 'w')
             f.write(template.format(query_url))
             f.close()
             
             print(query_url + ' ==> ' + outfile)
+
+            # don't repeat when argv mode.
+            if len(sys.argv) > 1:
+                break;
 
     except EOFError:
         pass
