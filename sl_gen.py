@@ -1,7 +1,7 @@
 # sl_gen.py - Search Launcher Generator
 # Written by hoey @ hoeysoft.com
 
-"""Usage : >>python slg.py 
+"""Usage : >>python sl_gen.py 
 """
 
 _TEMPLATE = \
@@ -89,4 +89,4 @@ if __name__ == '__main__':
         sys.stderr.write('error occurred.\n')
 
 else:
-    print("Can't use 'slg.py' as a module")
+    print("Can't use 'sl_gen.py' as a module")
