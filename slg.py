@@ -8,7 +8,8 @@ _TEMPLATE = \
 """ @echo off
 
 ::URL to query
-SET HOEY_LCHR_QUERY={0}
+SET HOEY_LCHR_QUERY="{0}"
+SET HOEY_LCHR_QUERY=%HOEY_LCHR_QUERY:"=%
 SET HOEY_LCHR_QUERY=%HOEY_LCHR_QUERY%%1
 SHIFT
 
@@ -55,8 +56,4 @@ if __name__ == '__main__':
 
 else:
     print("Can't use 'slg.py' as a module")
-
-    
-    
-
 

@@ -1,7 +1,7 @@
  @echo off
 
 ::URL to query
-SET HOEY_LCHR_QUERY=search.naver.com/search.naver?ie=utf8&query=
+SET HOEY_LCHR_QUERY="search.naver.com/search.naver?ie=utf8&query="
 SET HOEY_LCHR_QUERY=%HOEY_LCHR_QUERY%%1
 SHIFT
 
