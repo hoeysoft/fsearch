@@ -1,6 +1,7 @@
 sl_gen
 ======
-###Search Launcher Generator - Search in "Run dialog box"([Win]-R)
+Search Launcher & its Generator
+####Search in "Run dialog box"([Win]-R)
 
 
 Simple Use:
