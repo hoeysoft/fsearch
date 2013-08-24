@@ -23,7 +23,7 @@ GOTO Loop
 :: "url.com/abc?query="abc ===> "url.com/abc?query=abc"
 SET HOEY_LCHR_QUERY="%HOEY_LCHR_QUERY:"=%"
 
-%HOEY_LCHR_BROWSER% %HOEY_LCHR_QUERY%
+start "" %HOEY_LCHR_BROWSER% %HOEY_LCHR_QUERY%
 
 :: Release env variable.
 SET HOEY_LCHR_BROWSER=

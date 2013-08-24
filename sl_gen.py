@@ -30,7 +30,7 @@ GOTO Loop
 :: "url.com/abc?query="abc ===> "url.com/abc?query=abc"
 SET HOEY_LCHR_QUERY="%HOEY_LCHR_QUERY:"=%"
 
-%HOEY_LCHR_BROWSER% %HOEY_LCHR_QUERY%
+start "" %HOEY_LCHR_BROWSER% %HOEY_LCHR_QUERY%
 
 :: Release env variable.
 SET HOEY_LCHR_BROWSER=
@@ -60,7 +60,6 @@ def get_args():
 if __name__ == '__main__':
     try:
         while True:
-            template = _TEMPLATE[:]
             args = get_args()
 
             query_url = args[0]
@@ -73,7 +72,7 @@ if __name__ == '__main__':
                     outfile = outfile + _OUT_EXTENSION 
     
             f = open(outfile, 'w')
-            f.write(template.format(query_url))
+            f.write(_TEMPLATE.format(query_url))
             f.close()
             
             print(query_url + ' ==> ' + outfile)
