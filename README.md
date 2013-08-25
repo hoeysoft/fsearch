@@ -1,15 +1,14 @@
-sl_gen
-======
-Search Launcher & its Generator
-####Search in "Run dialog box"([Win]-R)
+=======
+fsearch
+=======
+
+Fast Search in Run Dialog @ Windows
 
 
-Simple Use:
------------
->RUN "setup.bat" AS ADMINISTRATOR
-
+Usage
+-----
 ```
-In Run dialog box
+Open Run dialog box.(WINKEY+R)
     g [words] : google
     n [words] : naver
     e [words] : naver english dictionary
@@ -18,29 +17,23 @@ In Run dialog box
     wk [words] : wiki in Korean
 ```
 
+Setup
+------------
+>1. Run "setup.bat"
+>2. Done.
 
-Add customized Search Launcher
+
+Customizing
 ------------------------------
-*Required: python 2.x (I've used 2.7.5)*
 
->Command Line Arg mode:
-```
-sl_gen.py query_url [outfile]
-```
-
->Standard Input mode(Reads utill EOF):
-```
-sl_gen.py < list.txt
-```
-
+>1. append your OUTNAME and QUERY_URL config\list.txt
 >>list.txt(seperated with [:space:]*)
 ```
-query_url   [outfile]
-query_url   [outfile]
+[OUTNAME]   QUERY_URL
+[OUTNAME]   QUERY_URL
+[OUTNAME]   QUERY_URL
 ...
 ```
-=======
-fsearch
-=======
 
-Fast Search in Run Dialog @ Windows
+>2. Run config\update.bat ( *Required: python 27* )
+>3. Done.
