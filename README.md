@@ -26,8 +26,8 @@ Setup
 Customizing
 ------------------------------
 
->1. append your OUTNAME and QUERY_URL config\list.txt
->>list.txt(seperated with [:space:]*)
+>1. append your OUTNAME and QUERY_URL to **config\list.txt**
+>>list.txt(each lines seperated with [:space:]*)
 ```
 [OUTNAME]   QUERY_URL
 [OUTNAME]   QUERY_URL
