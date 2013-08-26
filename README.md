@@ -39,3 +39,8 @@ query_url   [outfile]
 query_url   [outfile]
 ...
 ```
+=======
+fsearch
+=======
+
+Fast Search in Run Dialog @ Windows
