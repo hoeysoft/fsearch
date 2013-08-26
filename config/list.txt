@@ -1,0 +1,7 @@
+g.bat   www.google.com/#q=
+n.bat   search.naver.com/search.naver?ie=utf8&query=
+e.bat   endic.naver.com/search.nhn?query=
+k.bat   krdic.naver.com/search.nhn?query=
+we.bat  http://en.wikipedia.org/w/index.php?search=
+wk.bat  http://ko.wikipedia.org/w/index.php?search=
+fb.bat  https://www.facebook.com/search/results.php?init=quick&q=

@@ -1,7 +1,0 @@
-..\out
-www.google.com/#q=  g.bat
-search.naver.com/search.naver?ie=utf8&query=    n.bat
-endic.naver.com/search.nhn?query=   e.bat
-krdic.naver.com/search.nhn?query=   k.bat
-http://ko.wikipedia.org/w/index.php?search=   wk.bat
-http://en.wikipedia.org/w/index.php?search=   we.bat
