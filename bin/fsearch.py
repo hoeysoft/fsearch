@@ -1,7 +1,7 @@
-# sl_gen.py - Search Launcher Generator
+# fsearch.py - Search Launcher Generator
 # Written by hoey @ hoeysoft.com
 
-"""Usage : >>python sl_gen.py 
+"""Usage : >>python fsearch.py 
 """
 
 _TEMPLATE = \
@@ -41,6 +41,7 @@ _OUT_EXTENSION = '.bat'
 
 
 import sys
+import os
 import re
 
 
@@ -88,4 +89,4 @@ if __name__ == '__main__':
         sys.stderr.write('error occurred.\n')
 
 else:
-    print("Can't use 'sl_gen.py' as a module")
+    print("Can't use 'fsearch.py' as a module")
