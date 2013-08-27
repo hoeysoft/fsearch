@@ -1,7 +1,4 @@
 g	www.google.com/#q=
-n	search.naver.com/search.naver?ie=utf8&query=
+n	search.naver.com/search.naver?query=
 e	endic.naver.com/search.nhn?query=
 k	krdic.naver.com/search.nhn?query=
-we	http://en.wikipedia.org/w/index.php?search=
-wk	http://ko.wikipedia.org/w/index.php?search=
-hoey	http://hoeysoft.com

@@ -13,8 +13,6 @@ Open Run dialog box.(WINKEY+R)
     n [words] : naver
     e [words] : naver english dictionary
     k [words] : naver korean dictionary
-    we [words] : wiki in English
-    wk [words] : wiki in Korean
 ```
 
 Setup
