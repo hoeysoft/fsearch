@@ -1,7 +1,7 @@
  @echo off
 
 ::URL to query
-SET HOEY_LCHR_QUERY="krdic.naver.com/search.nhn?query="
+SET HOEY_LCHR_QUERY="www.google.co.kr/search?&tbm=isch&q="
 SET HOEY_LCHR_QUERY=%HOEY_LCHR_QUERY%%1
 SHIFT
 
@@ -24,7 +24,8 @@ GOTO Loop
 SET HOEY_LCHR_QUERY="%HOEY_LCHR_QUERY:"=%"
 
 start "" %HOEY_LCHR_BROWSER% %HOEY_LCHR_QUERY%
-call log_fsearch.bat k %*
+call log_fsearch.bat gi %*
+
 
 :: Release env variable.
 SET HOEY_LCHR_BROWSER=

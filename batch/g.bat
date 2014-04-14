@@ -24,6 +24,7 @@ GOTO Loop
 SET HOEY_LCHR_QUERY="%HOEY_LCHR_QUERY:"=%"
 
 start "" %HOEY_LCHR_BROWSER% %HOEY_LCHR_QUERY%
+call log_fsearch.bat g %*
 
 :: Release env variable.
 SET HOEY_LCHR_BROWSER=
